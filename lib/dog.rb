@@ -6,6 +6,10 @@ class Dog
     @name = name 
     @@all << name 
   end 
+  
+  def self.new
+    @@all << self 
+  end 
  def  self.all 
   @@all.each do |name|
     puts name 
