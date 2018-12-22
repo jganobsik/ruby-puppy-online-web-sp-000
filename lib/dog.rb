@@ -6,10 +6,11 @@ class Dog
     @name = name 
     @@all << name 
   end 
-  self.all 
+ def  self.all 
   @@all
-end 
+  end 
  def self.clear_all 
   @@all.clear 
 end
+
 end
